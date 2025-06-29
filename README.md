@@ -6,7 +6,7 @@
 
 This academic project is a deep dive into **Principal Component Analysis (PCA)** applied to football player statistics from the 2022-2023 season. The goal was to reduce the high dimensionality of player data to visualize and interpret different player profiles and styles of play.
 
-This analysis served as the direct inspiration and foundation for my personal project, an **[Interactive Player Comparison Tool](https://github.com/[your-github-username]/Comparateur-de-profils)**.
+This analysis served as the direct inspiration and foundation for my personal project, an **[Interactive Player Comparison Tool]([https://github.com/[your-github-username]/Comparateur-de-profils](https://github.com/nico916/Comparateur-de-profils))**.
 
 
 ## Table of Contents
@@ -65,7 +65,7 @@ The PCA successfully separated players into distinct clusters corresponding to t
 
 > "While working on this PCA project, I saw the players represented as a cloud of points in a 2D space. Since each point is a summary of a player's stats, I realized I could use the Euclidean distance between any two points to measure their similarity. This insight was the spark for my next project: an interactive tool that connects this statistical representation to real-world player comparisons."
 
-This academic analysis directly led to the development of my **[Interactive Player Comparison Tool](https://github.com/[your-github-username]/Comparateur-de-profils)**, built with Streamlit and deployed online.
+This academic analysis directly led to the development of my **[Interactive Player Comparison Tool]([https://github.com/[your-github-username]/Comparateur-de-profils](https://github.com/nico916/Comparateur-de-profils))**, built with Streamlit and deployed online.
 
 ## Technical Reflections & Lessons Learned
 
