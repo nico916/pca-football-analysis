@@ -1,18 +1,3 @@
-% On choisit une base de données de joueurs de football que nous avons pré-traitée (player_stats_processed.csv).
-% Nous avons déjà réalisé un nettoyage, filtrage (joueurs avec >= 500 minutes, enlevé les gardiens de but, gérer les joueurs qui ont été transferé en hiver), 
-% recatégorisation des postes (FW, MF, DF) et sélection de variables.
-% L'objectif est d'utiliser la PCA pour analyser et visualiser les profils 
-% types de joueurs, commenter les résultats et tirer un maximum de
-% conclusions. Cette base de donnée nous permettait également de choisir si
-% on voulait catégoriser les joueurs (championnats, âge, nationalité,
-% poste, etc..)
-%
-% Par exemple, on a observé des axes conceptuels (Offensif vs Défensif, Créatif vs Stéréotypé) 
-% ,afficher le nom d'un joueur au survol du point, 
-% visualiser les variables les plus contributives et analyser les paires de variables 
-% les plus et moins corrélées. A la fin, nous pourrons conclure sur la répartition 
-% des joueurs dans cet espace factoriel et les liens entre variables.
-
 % Étape 1 : Chargement des données et préparation
 data = readtable('player_stats_processed.csv', 'Delimiter', ';', 'VariableNamingRule', 'preserve');
 player_names = data.Player;
@@ -139,19 +124,6 @@ uimenu(c,'Label','Afficher FW uniquement','Callback',@(src,event)filterByCategor
 uimenu(c,'Label','Afficher MF uniquement','Callback',@(src,event)filterByCategory(fig, pca_scores, data, global_indices, 'MF', player_names));
 uimenu(c,'Label','Afficher DF uniquement','Callback',@(src,event)filterByCategory(fig, pca_scores, data, global_indices, 'DF', player_names));
 uimenu(c,'Label','Afficher tous','Callback',@(src,event)filterByCategory(fig, pca_scores, data, global_indices, 'ALL', player_names));
-
-% Résumé des conclusions :
-% Nous avons pré-traité les données de joueurs afin de n'avoir que les
-% joueurs avec suffisamment de temps de jeu et des variables pertinentes.
-% Après standardisation, nous avons appliqué la PCA. Les deux premières
-% composantes principales expliquent un pourcentage élevé de la variance (au moins 70 pour-cents) , 
-% permettant de distinguer clairement différents types de joueurs 
-% (attaquants, milieux, défenseurs) et leurs caractéristiques 
-% (offensif/défensif, créatif/stéréotypé). Les variables les plus corrélées 
-% ou les moins corrélées ont également été identifiées, montrant des liens 
-% entre différentes aptitudes (ex. Shots vs PasTotPrgDist, SCA, Assists, etc.).
-% Ce travail illustre comment la PCA permet de réduire la dimensionnalité, 
-% dégager des axes conceptuels et mieux comprendre la diversité des profils de joueurs.
 
 function output_txt = displayPlayerName(event, player_names, pca_scores, global_indices)
     pos = event.Position;
