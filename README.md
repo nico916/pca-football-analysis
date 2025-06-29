@@ -6,7 +6,7 @@
 
 This academic project is a deep dive into **Principal Component Analysis (PCA)** applied to football player statistics from the 2022-2023 season. The goal was to reduce the high dimensionality of player data to visualize and interpret different player profiles and styles of play.
 
-This analysis served as the direct inspiration and foundation for my personal project, an **[Interactive Player Comparison Tool]([https://github.com/[your-github-username]/Comparateur-de-profils](https://github.com/nico916/Comparateur-de-profils))**.
+This analysis served as the direct inspiration and foundation for my personal project, an **[Interactive Player Comparison Tool]([https://github.com/[your-github-username]/Comparateur-de-profils](https://github.com/nico916/Comparateur-de-profils])**.
 
 
 ## Table of Contents
