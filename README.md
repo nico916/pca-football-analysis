@@ -91,7 +91,7 @@ The data used for this analysis is the **"2022/2023 Football Player Stats"** dat
 ### Usage
 1.  **Pre-process the data**: Run the Python script (`PCA.py`) on the raw CSV file. This will generate a new file named `player_stats_processed.csv`.
     ```sh
-    python data_preprocessing.py
+    python PCA.py
     ```
 2.  **Run the PCA analysis**: Open MATLAB and run the main script (`PCA.m`). The script will automatically load `player_stats_processed.csv` to perform the analysis and generate the visualization.
 
