@@ -89,7 +89,7 @@ The data used for this analysis is the **"2022/2023 Football Player Stats"** dat
 -   [Link to the dataset on Kaggle](https://www.kaggle.com/datasets/vivovinco/20222023-football-player-stats)
 
 ### Usage
-1.  **Pre-process the data**: Run the Python script (`data_preprocessing.py`) on the raw CSV file. This will generate a new file named `player_stats_processed.csv`.
+1.  **Pre-process the data**: Run the Python script (`PCA.py`) on the raw CSV file. This will generate a new file named `player_stats_processed.csv`.
     ```sh
     python data_preprocessing.py
     ```
